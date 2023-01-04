@@ -4,7 +4,7 @@ import NavLink from "./NavLink";
 
 function Navigation() {
   return (
-    <div className="navigation">
+    <div className="container navigation">
       <img className="toggle" src="assets/images/icon-menu.svg" alt="toggle" />
       <div>
         <img className="logo" src="assets/images/logo.svg" alt="logo" />
@@ -20,7 +20,10 @@ function Navigation() {
         <div>
           <img className="cart" src="assets/images/icon-cart.svg" alt="cart" />
         </div>
-        <img className="avatar" src="assets/images/image-avatar.png" alt="avatar" />
+        <div>
+          <img className="avatar" src="assets/images/image-avatar.png" alt="avatar" />
+        </div>
+        
       </nav>
     </div>
   );

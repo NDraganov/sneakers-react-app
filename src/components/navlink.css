@@ -1,5 +1,10 @@
 li {
     font-size: 16px;
-    padding-right: 30px;
+    margin-right: 30px;
     color: hsl(219, 9%, 45%);
+}
+li:hover {
+    cursor: pointer;
+    padding-bottom: 30px;
+    border-bottom: 5px solid orange;
 }

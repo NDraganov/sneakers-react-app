@@ -2,14 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    padding-top: 20px;
 }
 .toggle {
     display: none;
 }
 .logo {
     width: 70%;
-    padding-left: 100px;
+    margin-left: 100px;
 }
 nav {
     display: flex;
@@ -26,6 +26,10 @@ nav {
     padding-left: 450px;
 }
 .avatar {
-    width: 4%;
-    padding-right: 100px;
+    width: 25%;
+    margin-right: 100px;
+}
+.avatar:hover {
+    border: 2px solid orange;
+    border-radius: 100%;
 }
