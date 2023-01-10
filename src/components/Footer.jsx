@@ -4,7 +4,7 @@ import "./footer.css";
 function Footer() {
   return (
     <div className="footer">
-      <p>Copyryght 2022</p>
+      <p>Copyryght 2023</p>
     </div>
   );
 }
