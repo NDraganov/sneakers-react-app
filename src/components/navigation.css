@@ -1,35 +1,59 @@
+:root {
+    --orange: hsl(26, 100%, 55%)
+}
 .navigation {
+
+}
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
+    height: 120px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .toggle {
     display: none;
 }
 .logo {
-    width: 70%;
-    margin-left: 100px;
-}
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
+    width: 15%;
 }
 .menu-links {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     list-style: none;
+    height: 120px;
+    padding-right: 450px;
+}
+ul li {
+    padding: 100px 20px 0px;
+    height: 120px;
+    color: hsl(219, 9%, 45%);
+}
+a {
+    text-decoration: none;
+}
+.link:hover {
+    padding-bottom: 47px;
+    border-bottom: 5px solid var(--orange);
+}
+.right-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-container {
+    margin: 10px;
 }
 .cart {
-    padding-left: 450px;
+    margin-right: 20px;
 }
 .avatar {
-    width: 25%;
-    margin-right: 100px;
+    width: 40%; 
 }
 .avatar:hover {
-    border: 2px solid orange;
+    cursor: pointer;
+    border: 2px solid var(orange);
     border-radius: 100%;
 }
