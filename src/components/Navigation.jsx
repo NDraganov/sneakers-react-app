@@ -21,6 +21,7 @@ function Navigation() {
             <img className="avatar" src="assets/images/image-avatar.png" alt="avatar"/>
         </div>
       </header>
+      <hr />
     </div>
   );
 }
