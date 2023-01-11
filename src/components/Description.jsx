@@ -1,5 +1,5 @@
-import React from "react";
-import "./description.css";
+import React from 'react';
+import './description.css';
 
 function Description() {
   return (

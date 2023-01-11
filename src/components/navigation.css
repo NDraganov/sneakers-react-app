@@ -27,11 +27,11 @@ header {
     padding-right: 450px;
 }
 ul li {
-    padding: 100px 20px 0px;
+    padding: 55px 20px 0px;
     height: 120px;
-    color: hsl(219, 9%, 45%);
 }
 a {
+    color: hsl(219, 9%, 45%);
     text-decoration: none;
 }
 .link:hover {
@@ -47,6 +47,7 @@ a {
     margin: 10px;
 }
 .cart {
+    cursor: pointer;
     margin-right: 20px;
 }
 .avatar {

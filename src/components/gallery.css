@@ -1,0 +1,13 @@
+.galleryWrap {
+    display: flex;
+}
+.galleryWrap .single img {
+    cursor: pointer;
+    width: 60%;
+    border-radius: 7px;
+}
+.galleryWrap .single img:hover {
+    background-color: hsl(0, 0%, 100%);
+    opacity: 0.5;
+    border: 2px solid var(--orange);
+}
