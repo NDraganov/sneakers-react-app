@@ -18,7 +18,7 @@ function Main() {
     { img: "assets/images/image-product-4.jpg" },
   ];
   return (
-    <div className="container">
+    <div className="container main">
       <div className="row">
         <div className="col-lg-6">
           <Gallery
