@@ -34,6 +34,9 @@ a {
     color: hsl(219, 9%, 45%);
     text-decoration: none;
 }
+a:hover {
+    color: hsl(220, 13%, 13%);
+}
 .link:hover {
     padding-bottom: 47px;
     border-bottom: 5px solid var(--orange);
