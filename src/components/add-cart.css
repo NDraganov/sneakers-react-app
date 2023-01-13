@@ -1,0 +1,35 @@
+.add {
+    margin-left: 30px;
+}
+.count-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: hsl(223, 64%, 98%);
+}
+.number {
+    font-size: 18px;
+    font-weight: 700;
+}
+.btn {
+    border: none;
+    background: none;
+    color: var(--orange);
+    font-weight: 700;
+}
+.add-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange);
+    color: hsl(223, 64%, 98%);
+    font-size: 18px;
+    font-weight: 700;
+    width: 110%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+}

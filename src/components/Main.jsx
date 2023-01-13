@@ -3,6 +3,7 @@ import bootstrap from 'bootstrap';
 import './main.css';
 import Description from './Description';
 import Gallery from './Gallery';
+import AddCart from './AddCart';
 
 function Main() {
   const galleryImagesSmall = [
@@ -28,6 +29,7 @@ function Main() {
         </div>
         <div className="col-lg-6">
           <Description />
+          <AddCart />
         </div>
       </div>
     </div>
