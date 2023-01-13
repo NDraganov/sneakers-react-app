@@ -17,12 +17,12 @@ function AddCart() {
     <div className="container add">
       <div className="row">
         <div className="col-lg-3 col-md-12 count-buttons">
-          <button className="btn" onClick={decrease}><RemoveOutlinedIcon /></button>
+          <button className="btn" onClick={decrease} disabled={count === 0 || (count < 0 && true)}><RemoveOutlinedIcon /></button>
             <span className="number">{count}</span>
           <button className="btn" onClick={increase}><AddOutlinedIcon /></button>
         </div>
         <div className="col-lg-6 col-md-12 add-to-cart">
-          <button className="add-btn">
+          <button className="add-btn" disabled={count === 0 || (count < 0 && true)}>
             <img className="cart" src="assets/images/icon-cart.svg" />
             Add to cart
           </button>
