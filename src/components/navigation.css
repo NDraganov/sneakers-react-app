@@ -74,7 +74,7 @@ a:hover {
 }
 .avatar:hover {
     cursor: pointer;
-    border: 2px solid var(orange);
+    border: 2px solid var(--orange);
     border-radius: 100%;
 }
 hr {
