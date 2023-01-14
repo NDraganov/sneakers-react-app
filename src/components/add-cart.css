@@ -28,7 +28,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--orange);
-    color: hsl(223, 64%, 98%);
+    color: hsl(0, 0%, 100%);
     font-size: 18px;
     font-weight: 700;
     width: 110%;
@@ -39,7 +39,4 @@
 .add-btn:hover {
     background-color: hsl(26, 100%, 55%, 0.7);
     box-shadow: 5px 30px 20px -3px hsl(25, 100%, 94%);
-}
-.cart {
-    cursor: auto;
 }

@@ -1,8 +1,16 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import bootstrap from 'bootstrap';
 import "./navigation.css";
 
 function Navigation() {
+  const [data, setData] = useState(null);
+
+  {/* useEffect info taken from - https://www.youtube.com/watch?v=Dorf8i6lCuk */}
+  useEffect(() => {
+    const get = JSON.parse(localStorage.getItem("data")) || null;
+    setData(get);
+  }, [data])
+
   return (
     <div className="navigation">
       <header>
@@ -18,6 +26,7 @@ function Navigation() {
         <div className="right-nav">
           <div className="cart-container">
             <img className="cart" src="assets/images/icon-cart.svg" alt="cart"/>
+            <p className={data > 0 && `count-cart`}>{data}</p>
           </div>
             <img className="avatar" src="assets/images/image-avatar.png" alt="avatar"/>
         </div>

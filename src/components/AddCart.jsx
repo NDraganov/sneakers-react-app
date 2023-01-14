@@ -12,6 +12,12 @@ function AddCart() {
   function decrease() {
     setCount(count - 1);
   }
+  {/* Local storage info - https://blog.logrocket.com/using-localstorage-react-hooks/ */}
+  function addCount() {
+    const get = JSON.parse(localStorage.getItem('data')) || null;
+    localStorage.setItem('data', JSON.stringify(get + count));
+    window.location.reload();
+  }
 
   return (
     <div className="container add">
@@ -22,7 +28,7 @@ function AddCart() {
           <button className="btn" onClick={increase}><AddOutlinedIcon /></button>
         </div>
         <div className="col-lg-6 col-md-12 add-to-cart">
-          <button className="add-btn" disabled={count === 0 || (count < 0 && true)}>
+          <button className="add-btn" onClick={addCount} disabled={count === 0 || (count < 0 && true)}>
             <img className="cart" src="assets/images/icon-cart.svg" />
             Add to cart
           </button>

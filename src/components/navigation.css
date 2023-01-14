@@ -53,6 +53,22 @@ a:hover {
     cursor: pointer;
     margin-right: 20px;
 }
+.count-cart {
+    position: absolute;
+    top: 45px;
+    right: 187px;
+    z-index: 1;
+    background-color: var(--orange);
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+    font-weight: 700;
+    width: 23px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
 .avatar {
     width: 40%; 
 }
