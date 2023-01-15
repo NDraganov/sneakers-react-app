@@ -38,7 +38,7 @@ function Gallery({ galleryImagesSmall, galleryImagesBig }) {
           <button className="btnNext" onClick={nextSlide}>
             <ArrowForwardIosIcon />
           </button>
-          <div className="large-image">
+          <div className="large-image-lightbox">
             <img src={galleryImagesBig[slideNumber].img} alt="" />
           </div>
           <div className="container-gallery">

@@ -4,11 +4,12 @@
 }
 .galleryWrap {
     display: flex;
+    gap: 30px;
     padding-top: 35px;
 }
 .galleryWrap .single img {
     cursor: pointer;
-    width: 60%;
+    width: 100px;
     border-radius: 7px;
 }
 .galleryWrap .single img:hover {
@@ -64,14 +65,14 @@
     right: 460px;
     border: none;
 }
-.large-image {
+.large-image-lightbox{
     width: calc(100% - 40px);
     height: calc(100% - 40px);
     display: flex;
     justify-content: center;
     margin-top: 150px;
 } 
-.large-image img {
+.large-imag-lightbox img {
     width: 500px;
     height: 480px;
     border-radius: 11px;
