@@ -1,9 +1,9 @@
 :root {
-    --orange: hsl(26, 100%, 55%)
+    --orange: hsl(26, 100%, 55%);
+    --white: hsl(0, 0%, 100%);
 }
-.navigation {
 
-}
+/* Main navigation */
 header {
     display: flex;
     align-items: center;
@@ -58,10 +58,10 @@ a:hover {
 .count-cart {
     position: absolute;
     top: 45px;
-    right: 187px;
+    right: 170px;
     z-index: 1;
     background-color: var(--orange);
-    color: hsl(0, 0%, 100%);
+    color: var(--white);
     font-size: 12px;
     font-weight: 700;
     width: 23px;
@@ -83,8 +83,10 @@ hr {
     margin: 2px 100px 1px 100px;
     border: 1px solid hsl(220, 14%, 75%, 0.6);
 }
+
+/* Offcanvas */
 .side-nav {
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--white);
     position: fixed;
     left: 0;
     bottom: 0;
@@ -106,6 +108,76 @@ hr {
 .hidden {
     display: none;
 }
+
+/* Checkout modal */
+.modul {
+    background-color: var(--white);
+    position: absolute;
+    top: 100px;
+    right: 90px;
+    width: 400px;
+    height: 290px;
+    z-index: 1;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+.modul h5 {
+    color: hsl(220, 13%, 13%);
+    font-weight: 700;
+    padding: 15px 10px;
+}
+.modul hr {
+    position: relative;
+    width: 106%;
+    right: 113px;
+}
+.empty-info {
+    text-align: center;
+    padding-top: 80px;
+    font-weight: 700;
+    color: hsl(219, 9%, 45%);
+}
+.cart-info {
+    text-align: center;
+    margin-top: 30px;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.thumb {
+    width: 20%;
+    border-radius: 10px;
+}
+.content p {
+    margin-bottom: 4px;
+    color: hsl(219, 9%, 45%);
+    font-size: 18px;
+}
+.content span {
+    color: hsl(220, 13%, 13%);
+    font-weight: 700;
+}
+.bin {
+    background: none;
+    border: none;
+}
+.checkout-btn {
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    width: 92%;
+    height: 50px;
+    margin: 30px auto 10px;
+}
+.checkout-btn:hover {
+    background-color: hsl(26, 100%, 55%, 0.7);
+    box-shadow: 5px 30px 20px -3px hsl(25, 100%, 94%);
+}
+
 @media only screen and (max-width: 600px) {
     header {
         padding-left: 20px;

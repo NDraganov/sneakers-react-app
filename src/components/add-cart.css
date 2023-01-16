@@ -28,7 +28,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--orange);
-    color: hsl(0, 0%, 100%);
+    color: var(--white);
     font-size: 18px;
     font-weight: 700;
     width: 110%;

@@ -2,16 +2,16 @@
     padding-top: 70px;
     margin-left: 30px;
 }
-.description-title {
-    color: hsl(220, 13%, 13%);
-    font-size: 45px;
-    font-weight: 700;
-}
 .sneaker-company {
     color: var(--orange);
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 3px;
+}
+.description-title {
+    color: hsl(220, 13%, 13%);
+    font-size: 45px;
+    font-weight: 700;
 }
 .sneakers-description {
     padding-top: 25px;
