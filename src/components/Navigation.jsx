@@ -1,6 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import bootstrap from 'bootstrap';
-import "./navigation.css";
+import './navigation.css';
+import toggle from '../images/icon-menu.svg';
+import logo from '../images/logo.svg';
+import basket from '../images/icon-cart.svg';
+import avatar from '../images/image-avatar.png';
 
 function Navigation() {
   const [data, setData] = useState(null);
@@ -29,8 +33,8 @@ function Navigation() {
   return (
     <div className="navigation">
       <header>
-        <img className="toggle" src="assets/images/icon-menu.svg" alt="toggle" onClick={handleOpenOffCanvas}/>
-        <img className="logo" src="assets/images/logo.svg" alt="logo" />
+        <img className="toggle" src={toggle} alt="toggle" onClick={handleOpenOffCanvas}/>
+        <img className="logo" src={logo} alt="logo" />
         <ul className="menu-links">
           <li><a className="link">Collections</a></li>
           <li><a className="link">Men</a></li>
@@ -40,10 +44,10 @@ function Navigation() {
         </ul>
         <div className="right-nav">
           <div className="cart-container">
-            <img className="cart" src="assets/images/icon-cart.svg" alt="cart" onClick={handleCart}/>
+            <img className="cart" src={basket} alt="cart" onClick={handleCart}/>
             <p className={data > 0 && `count-cart`}>{data}</p>
           </div>
-            <img className="avatar" src="assets/images/image-avatar.png" alt="avatar" onClick={handleCart}/>
+            <img className="avatar" src={avatar} alt="avatar" onClick={handleCart}/>
         </div>
       </header>
       <hr />
