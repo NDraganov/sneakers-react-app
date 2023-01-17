@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/NDraganov/sneakers-react-app/static/css/main.a8dcc9dc.css",
+    "main.js": "/NDraganov/sneakers-react-app/static/js/main.070af26c.js",
+    "index.html": "/NDraganov/sneakers-react-app/index.html",
+    "main.a8dcc9dc.css.map": "/NDraganov/sneakers-react-app/static/css/main.a8dcc9dc.css.map",
+    "main.070af26c.js.map": "/NDraganov/sneakers-react-app/static/js/main.070af26c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8dcc9dc.css",
+    "static/js/main.070af26c.js"
+  ]
+}
