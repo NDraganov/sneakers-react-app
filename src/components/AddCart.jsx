@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "./add-cart.css";
 import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
+import basket from '../images/icon-cart.svg'
 
 function AddCart() {
   const [count, setCount] = useState(0);
@@ -29,7 +30,7 @@ function AddCart() {
         </div>
         <div className="col-lg-6 col-md-12 add-to-cart">
           <button className="add-btn" onClick={addCount} disabled={count === 0 || (count < 0 && true)}>
-            <img className="cart" src="assets/images/icon-cart.svg" />
+            <img className="cart" src={basket} />
             Add to cart
           </button>
         </div>
