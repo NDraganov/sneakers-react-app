@@ -1,13 +1,16 @@
 {
   "files": {
     "main.css": "/NDraganov/sneakers-react-app/static/css/main.a8dcc9dc.css",
-    "main.js": "/NDraganov/sneakers-react-app/static/js/main.070af26c.js",
+    "main.js": "/NDraganov/sneakers-react-app/static/js/main.5d4e2cbd.js",
+    "static/media/logo.svg": "/NDraganov/sneakers-react-app/static/media/logo.4fe9c1e86cf9bf600f0c239f6a6e5317.svg",
     "index.html": "/NDraganov/sneakers-react-app/index.html",
+    "static/media/icon-cart.svg": "/NDraganov/sneakers-react-app/static/media/icon-cart.539ec608f50e707c94d583ec11acf99d.svg",
+    "static/media/icon-menu.svg": "/NDraganov/sneakers-react-app/static/media/icon-menu.c6107d03f1edcf73523ebd8cbc50a443.svg",
     "main.a8dcc9dc.css.map": "/NDraganov/sneakers-react-app/static/css/main.a8dcc9dc.css.map",
-    "main.070af26c.js.map": "/NDraganov/sneakers-react-app/static/js/main.070af26c.js.map"
+    "main.5d4e2cbd.js.map": "/NDraganov/sneakers-react-app/static/js/main.5d4e2cbd.js.map"
   },
   "entrypoints": [
     "static/css/main.a8dcc9dc.css",
-    "static/js/main.070af26c.js"
+    "static/js/main.5d4e2cbd.js"
   ]
 }
