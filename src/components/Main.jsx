@@ -15,10 +15,10 @@ import AddCart from './AddCart';
 
 function Main() {
   const galleryImagesSmall = [
-    { img: "assets/images/image-thumbnail-1.jpg" },
-    { img: "assets/images/image-thumbnail-2.jpg" },
-    { img: "assets/images/image-thumbnail-3.jpg" },
-    { img: "assets/images/image-thumbnail-4.jpg" },
+    { img: "assets/images/image-product-1-thumbnail.jpg" },
+    { img: "assets/images/image-product-2-thumbnail.jpg" },
+    { img: "assets/images/image-product-3-thumbnail.jpg" },
+    { img: "assets/images/image-product-4-thumbnail.jpg" },
   ];
   const galleryImagesBig = [
     { img: "assets/images/image-product-1.jpg" },
