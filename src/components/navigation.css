@@ -118,8 +118,8 @@ hr {
     width: 400px;
     height: 290px;
     z-index: 1;
-    border: 1px solid lightgrey;
     border-radius: 10px;
+    box-shadow: 5px 20px 30px -3px hsl(220, 14%, 75%);
 }
 .modul h5 {
     color: hsl(220, 13%, 13%);
