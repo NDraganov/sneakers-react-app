@@ -4,10 +4,9 @@
 }
 
 /* Main navigation */
-header {
+nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     height: 120px;
     padding-left: 100px;
     padding-right: 100px;
@@ -16,9 +15,6 @@ header {
     display: none;
     cursor: pointer;
     padding-top: 3px;
-}
-.logo {
-    width: 190px;
 }
 .menu-links {
     display: flex;
@@ -49,11 +45,11 @@ a:hover {
     justify-content: center;
 }
 .cart-container {
-    margin: 10px;
+    display: contents;
 }
 .cart {
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 35px;
 }
 .count-cart {
     position: absolute;
@@ -146,7 +142,7 @@ hr {
     align-items: center;
     justify-content: space-around;
 }
-.thumb {
+.thumbnail {
     width: 20%;
     border-radius: 10px;
 }
@@ -187,9 +183,6 @@ hr {
         display: block;
     }
     .logo {
-        padding-left: 20px;
-    }
-    .link {
-        display: none;
+        
     }
 }

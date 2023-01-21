@@ -30,7 +30,7 @@ function AddCart() {
         </div>
         <div className="col-lg-6 col-md-12 add-to-cart">
           <button className="add-btn" onClick={addCount} disabled={count === 0 || (count < 0 && true)}>
-            <img className="cart" src={basket} />
+            <img className="cart" src={basket} alt="basket" />
             Add to cart
           </button>
         </div>

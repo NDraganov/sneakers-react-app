@@ -5,6 +5,8 @@ import toggle from '../images/icon-menu.svg';
 import logo from '../images/logo.svg';
 import basket from '../images/icon-cart.svg';
 import avatar from '../images/image-avatar.png';
+import bin from '../images/icon-delete.svg';
+import close from '../images/icon-close.svg';
 
 function Navigation() {
   const [data, setData] = useState(null);
@@ -32,7 +34,9 @@ function Navigation() {
 
   return (
     <div className="navigation">
+      {/* Main navigation */}
       <header>
+        <nav>
         <img className="toggle" src={toggle} alt="toggle" onClick={handleOpenOffCanvas}/>
         <img className="logo" src={logo} alt="logo" />
         <ul className="menu-links">
@@ -49,19 +53,20 @@ function Navigation() {
           </div>
             <img className="avatar" src={avatar} alt="avatar" onClick={handleCart}/>
         </div>
+        </nav>
       </header>
       <hr />
 
       {/* offcanvas */}
       <div className={`side-nav ${sideNav === false && `hidden`}`}>
-        <img className='close-btn' src="assets/images/icon-close.svg" alt="" onClick={() => setSideNav(false)} />
+        <img className='close-btn' src={close} alt="close" onClick={() => setSideNav(false)} />
         <p>Collections</p>
         <p>Men</p>
         <p>Women</p>
         <p>About</p>
         <p>Contact</p>
       </div>
-
+      {/* Checkout module */}
       <div className={`container modul ${cart === false && `hidden`}`}>
         <h5>Cart</h5>
         <hr />
@@ -72,14 +77,14 @@ function Navigation() {
           ) : (
           <div className="cart-info">
             <div className="content">
-              <img className="thumb" src="assets/images/image-product-1-thumbnail.jpg" alt=""/>
+              <img className="thumbnail" src={require("../images/image-product-1-thumbnail.jpg")} alt=""/>
               <div>
                 <p>Fall Limited Edition Sneakers</p>
                 <p>$125.00 x {data} &nbsp;
                   <span>${125 * data}.00</span>
                 </p>
               </div>
-              <button className="bin" onClick={removeData}><img src="assets/images/icon-delete.svg" alt="" /></button>
+              <button className="bin" onClick={removeData}><img src={bin} alt="bin" /></button>
             </div>
             <button className="checkout-btn">Checkout</button>
           </div>

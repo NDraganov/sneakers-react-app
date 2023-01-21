@@ -39,28 +39,28 @@ function Gallery({ galleryImagesSmall, galleryImagesBig }) {
             <ArrowForwardIosIcon />
           </button>
           <div className="large-image-lightbox">
-            <img src={galleryImagesBig[slideNumber].img} alt="" />
+            <img src={galleryImagesBig[slideNumber].img} alt="large-lightbox" />
           </div>
           <div className="container-gallery">
             {galleryImagesSmall &&
               galleryImagesSmall.map((slide, index) => {
                 return (
                   <div className="single-image" key={index}>
-                    <img src={slide.img} alt="" />
+                    <img src={slide.img} alt="thumbnail" />
                   </div>
                 );
               })}
           </div>
         </div>
       }
-      <img className="large-image" src={galleryImagesBig[0].img} alt="" />
+      <img className="large-image" src={galleryImagesBig[0].img} alt="large" />
       {/* Map method used from - https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/17039130#overview */}
       <div className="galleryWrap">
         {galleryImagesSmall &&
           galleryImagesSmall.map((slide, index) => {
             return (
               <div className="single" key={index} onClick={ () => handleOpenModal(index) }>
-                <img src={slide.img} alt="" />
+                <img src={slide.img} alt="thumbnail" />
               </div>
             );
           })}
