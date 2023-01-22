@@ -55,7 +55,7 @@ function Navigation() {
         </div>
         </nav>
       </header>
-      <hr />
+      <hr className='nav-line' />
 
       {/* offcanvas */}
       <div className={`side-nav ${sideNav === false && `hidden`}`}>
