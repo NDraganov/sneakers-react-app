@@ -26,7 +26,7 @@ function Gallery({ galleryImagesSmall, galleryImagesBig }) {
     : setSlideNumber(slideNumber + 1)
   }
   return (
-    <div>
+    <div className="image-gallery">
       {openModal &&
         <div className="light-box">
           <button className="btnClose" onClick={handleCloseModal}>

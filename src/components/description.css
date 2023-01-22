@@ -50,3 +50,21 @@
     color: hsl(220, 14%, 75%);
     text-decoration: line-through;
 }
+@media only screen and (max-width: 600px) {
+    .description {
+        padding-top: 20px;
+    }
+    .sneakers-description {
+        padding-right: 0px;
+    }
+    .price {
+        display: flex;
+        align-items: center;
+    }
+    .transbox {
+        margin-left: 20px;
+    }
+    .regular-price {
+       
+    }
+}

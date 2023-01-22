@@ -1,3 +1,6 @@
+.image-gallery {
+    display: none;
+}
 .large-image {
     width: 90%;
     border-radius: 7px;

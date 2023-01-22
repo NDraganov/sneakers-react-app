@@ -1,8 +1,9 @@
 import React from 'react';
 import bootstrap from 'bootstrap';
 import './main.css';
-import Description from './Description';
 import Gallery from './Gallery';
+import MobileSlider from './MobileSlider';
+import Description from './Description';
 import AddCart from './AddCart';
 import thumb1 from '../images/image-product-1-thumbnail.jpg';
 import thumb2 from '../images/image-product-2-thumbnail.jpg';
@@ -34,6 +35,7 @@ function Main() {
             galleryImagesSmall={galleryImagesSmall}
             galleryImagesBig={galleryImagesBig}
           />
+          < MobileSlider galleryImagesBig={galleryImagesBig} />
         </div>
         <div className="col-lg-6">
           <Description />

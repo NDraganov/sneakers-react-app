@@ -113,7 +113,7 @@ hr {
     right: 90px;
     width: 400px;
     height: 290px;
-    z-index: 1;
+    z-index: 9;
     border-radius: 10px;
     box-shadow: 5px 20px 30px -3px hsl(220, 14%, 75%);
 }
@@ -175,14 +175,28 @@ hr {
 }
 
 @media only screen and (max-width: 600px) {
-    header {
-        padding-left: 20px;
+    nav {
+        height: 80px;
+        padding-left: 0px;
         padding-right: 0px;
     }
     .toggle {
         display: block;
+        padding-left: 25px;
     }
     .logo {
-        
+        padding-left: 20px;
+    }
+    .menu-links {
+        display: none;
+    }
+    .right-nav {
+        padding-left: 180px;
+    }
+    .avatar {
+        width: 30px;
+    }
+    hr {
+        display: none;
     }
 }
