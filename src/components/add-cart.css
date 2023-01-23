@@ -1,5 +1,5 @@
 .add {
-    margin-left: 30px;
+    padding-left: 40px;
 }
 .count-buttons {
     display: flex;
@@ -42,10 +42,10 @@
 }
 @media only screen and (max-width: 600px) {
     .count-buttons {
-        width: 86%;
+        width: 95%;
     }
     .add-btn {
-        width: 90%;
+        width: 100%;
         margin-left: -10px;
         margin-top: 20px;
     }
