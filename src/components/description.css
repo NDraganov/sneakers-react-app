@@ -33,7 +33,7 @@
     color: hsl(220, 13%, 13%);
 }
 .transbox {
-    margin-right: 185px;
+    margin-right: 320px;
     width: 60px;
     height: 30px;
     background: hsl(25, 100%, 94%);
@@ -57,12 +57,20 @@
     .sneakers-description {
         padding-right: 0px;
     }
+    .description-title {
+        font-size: 40px;
+    }
+    .sneakers-description {
+        padding-top: 15px;
+        padding-right: 0px;
+    }
     .price {
         display: flex;
         align-items: center;
     }
     .transbox {
         margin-left: 20px;
+        margin-right: 200px;
         padding: 0px 10px;
     }
     .regular-price {
