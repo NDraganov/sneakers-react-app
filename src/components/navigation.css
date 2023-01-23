@@ -52,9 +52,8 @@ a:hover {
     margin-right: 35px;
 }
 .count-cart {
-    position: absolute;
-    top: 45px;
-    right: 170px;
+    position: relative;
+    right: 45px;
     z-index: 1;
     background-color: var(--orange);
     color: var(--white);
