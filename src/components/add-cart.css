@@ -42,10 +42,11 @@
 }
 @media only screen and (max-width: 600px) {
     .count-buttons {
-        width: 100%;
+        width: 86%;
     }
     .add-btn {
-        width: 100%;
+        width: 90%;
         margin-left: -10px;
+        margin-top: 20px;
     }
 }
