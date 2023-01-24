@@ -90,6 +90,19 @@ a:hover {
     z-index: 99;
     padding: 30px 30px;
 }
+.offcanvas-background {
+    background-color: hsl(0, 0%, 0%, 75%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    z-index: 9;
+}
 .close-btn {
     cursor: pointer;
 }
@@ -97,6 +110,7 @@ a:hover {
     margin-top: 50px;
 }
 .side-nav p {
+    cursor: pointer;
     font-size: 16px;
     font-weight: 700;
 }

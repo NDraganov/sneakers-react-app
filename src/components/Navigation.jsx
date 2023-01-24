@@ -12,6 +12,7 @@ function Navigation() {
   const [data, setData] = useState(null);
   const [cart, setCart] = useState(false);
   const [sideNav, setSideNav] = useState(false);
+  const offcanvasBackground = document.getElementById('offcanvas-background');
 
   {/* useEffect info taken from - https://www.youtube.com/watch?v=Dorf8i6lCuk */}
   useEffect(() => {
@@ -28,8 +29,13 @@ function Navigation() {
     window.location.reload();
   }
 
-  function handleOpenOffCanvas() {
+  function handleOpenOffcanvas() {
     setSideNav(true)
+    offcanvasBackground.classList.add('offcanvas-background');
+  }
+  function handleCloseOffcanvas() {
+    setSideNav(false);
+    offcanvasBackground.classList.remove('offcanvas-background');
   }
 
   return (
@@ -37,7 +43,7 @@ function Navigation() {
       {/* Main navigation */}
       <header>
         <nav>
-        <img className="toggle" src={toggle} alt="toggle" onClick={handleOpenOffCanvas}/>
+        <img className="toggle" src={toggle} alt="toggle" onClick={handleOpenOffcanvas}/>
         <img className="logo" src={logo} alt="logo" />
         <ul className="menu-links">
           <li><a className="link">Collections</a></li>
@@ -59,13 +65,14 @@ function Navigation() {
 
       {/* offcanvas */}
       <div className={`side-nav ${sideNav === false && `hidden`}`}>
-        <img className='close-btn' src={close} alt="close" onClick={() => setSideNav(false)} />
+        <img className='close-btn' src={close} alt="close" onClick={handleCloseOffcanvas} />
         <p>Collections</p>
         <p>Men</p>
         <p>Women</p>
         <p>About</p>
         <p>Contact</p>
       </div>
+      <div id='offcanvas-background'></div>
       {/* Checkout module */}
       <div className={`container modul ${cart === false && `hidden`}`}>
         <h5>Cart</h5>
