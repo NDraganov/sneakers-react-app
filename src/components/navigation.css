@@ -4,6 +4,12 @@
 }
 
 /* Main navigation */
+.navigation {
+    position: sticky;
+    top: 0px;
+    background-color: var(--white);
+    z-index: 99;
+}
 nav {
     display: flex;
     align-items: center;
