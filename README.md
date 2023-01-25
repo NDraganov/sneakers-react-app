@@ -1,70 +1,141 @@
-# Getting Started with Create React App
+# Learning People Global - E-commerce product page solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Project presents my third and final project with my Front-end Web Development
+course with Learning People Global.
+This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6).
+The purpose of the solution is to present "Put all together" Front-end web development 
+project using JavaScript UI Library.
+The solution itself is an e-commerce website SNEAKERS.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My Solution](#my-solution)
+  - [Built with technologies](#built-with-technologies)
+  - [What I learned](#what-i-learned)
+  - [Errors and Bugs](#errors-and-bugs)
+- [Deployment](#deployment)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Open a lightbox gallery by clicking on the large product image
+- Switch the large product image by clicking on the small thumbnail images
+- Add items to the cart
+- View the cart and remove items from it
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
 
-### `npm run build`
+#### Desktop version
+![Desktop](./public/assets/screenshots/Desktop-page.png "Desktop-page")
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Checkout modal
+![Checkout](./public/assets/screenshots/Checkout-modal.png "Checkout-modal")
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Lightbox
+![Lightbox](./public/assets/screenshots/Lightbox.png "Lightbox")
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Mobile version
+![Mobile](./public/assets/screenshots/Mobile.png "Mobile")
 
-### `npm run eject`
+#### Offcanvas menu
+![Offcanvas](./public/assets/screenshots/Offcanvas.png "Offcanvas-menu")
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Links
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [GitHub](https://github.com/NDraganov/sneakers-react-app)
+- [Live site](https://ndraganov.github.io/sneakers-react-app/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## My Solution
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Built with technologies
 
-## Learn More
+- [JSX](https://reactjs.org/docs/introducing-jsx.html) - for rendering
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html) with media query - for styles 
+- [Bootstrap](https://getbootstrap.com) - for responsiveness
+- [React](https://reactjs.org/) - JS library
+- [MUI](https://mui.com) -  React component library used for buttons icons
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### What I learned
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* React basics - some of it: creating reusable components, useState, useEffect, 
+  adding third party libraries
+```js
+ useEffect(() => {
+    const get = JSON.parse(localStorage.getItem("data")) || null;
+    setData(get);
+  }, [data])
+```
 
-### Code Splitting
+* Map method - used for displaying gallery wrap
+```js
+{galleryImagesSmall &&
+    galleryImagesSmall.map((slide, index) => {
+    return (
+        <div className="single" key={index} onClick={ () => handleOpenModal(index) }>
+        <img src={slide.img} alt="thumbnail" />
+        </div>
+    );
+    })}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* LocalStorage - used to get and set item for cart functionality
+```js
+  function addCount() {
+    const get = JSON.parse(localStorage.getItem('data')) || null;
+    localStorage.setItem('data', JSON.stringify(get + count));
+    window.location.reload();
+  }
+```
 
-### Analyzing the Bundle Size
+### Errors and Bugs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Bootstrap npm package doesn't worked
+  - Solution: adding CDN links to index.html in "public" folder
+* After installed gh-pages package images not displayed in localhost.
+  - Reason: In the newly created "build" folder the paths changed, I haven't 
+    used "require()" in source attribute or imported.
+  - Solution: I imported the images into the components and where was possible I
+    used "require()" in source.
 
-### Making a Progressive Web App
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* Created local project folder - "npm create-react-app"
+* Created remote GitHub repository - on GitHub website I created empty repository sneakers-react-app
+* Connect local to remote repository - used command line tools with Hyper terminal
+  - git init
+  - git add.
+  - git commit -m "message"
+  - git remote add origin "URL"
+  - git push -u origin master
+* Published the website - used GitHub Pages
+  - Installed gh-pages nmp package - "npm install gh-pages --save-dev"
+  - Added homepage URL - in package.json ("homepage": "URL")
+  - Added properties to script object
+    - "predeploy": "npm run build"
+    - "deploy": "gh-pages -d build"
+  - Published website - "npm run deploy"
+* GitHub configurations - when I checked them, they've been set automatically
+  - In GitHub remote repository pressed "Settings"
+  - On the sitebar pressed "Pages"
+  - In "Build and Deployment" => "Source" (Deploy from branch), "Branch" (gh-pages), 
+    "Folder" (/ (root))
+  - Clicked "Save" button
 
-### Advanced Configuration
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* I'd like to thank [Academind](https://www.youtube.com/watch?v=Dorf8i6lCuk) on YouTube.
+  This tutorial really helped me understand the basics of React.
+* I'd like to thank [Dr. Angela Yu](https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/17038306#overview) course for helping me learn React basics in more details.
+* And last but not least my mentor, Alex Ford for being such an amazing mentor for all of my 
+  Learning people's projects. His support and guidness helped me learn best practices in coding. He always pushed me to improve my code and layout. Thank you, Alex!
