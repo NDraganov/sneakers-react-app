@@ -6,7 +6,7 @@ import logo from '../images/logo.svg';
 import basket from '../images/icon-cart.svg';
 import avatar from '../images/image-avatar.png';
 import bin from '../images/icon-delete.svg';
-import close from '../images/icon-close.svg';
+import CloseIcon from '@mui/icons-material/Close';
 
 function Navigation() {
   const [data, setData] = useState(null);
@@ -65,7 +65,9 @@ function Navigation() {
 
       {/* offcanvas */}
       <div className={`side-nav ${sideNav === false && `hidden`}`}>
-        <img className='close-btn' src={close} alt="close" onClick={handleCloseOffcanvas} />
+        <button className="close-btn" onClick={handleCloseOffcanvas}>
+          <CloseIcon fontSize="medium"/>
+        </button>
         <p>Collections</p>
         <p>Men</p>
         <p>Women</p>

@@ -110,7 +110,8 @@ a:hover {
     z-index: 9;
 }
 .close-btn {
-    cursor: pointer;
+    background: none;
+    border: none;
 }
 .side-nav p:first-of-type {
     margin-top: 50px;
