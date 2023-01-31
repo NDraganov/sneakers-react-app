@@ -45,7 +45,7 @@ function Gallery({ galleryImagesSmall, galleryImagesBig }) {
             {galleryImagesSmall &&
               galleryImagesSmall.map((slide, index) => {
                 return (
-                  <div className="single-image" key={index}>
+                  <div className="single-image" key={index} onClick={ () => handleOpenModal(index) }>
                     <img src={slide.img} alt="thumbnail" />
                   </div>
                 );
@@ -53,6 +53,7 @@ function Gallery({ galleryImagesSmall, galleryImagesBig }) {
           </div>
         </div>
       }
+      
       <img className="large-image" src={galleryImagesBig[0].img} alt="large" />
       {/* Map method used from - https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/17039130#overview */}
       <div className="galleryWrap">
