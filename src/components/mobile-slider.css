@@ -4,6 +4,7 @@
 .btn-prev, .btn-next {
     position: absolute;
     cursor: pointer;
+    color: hsl(220, 13%, 13%);
     border: none;
     border-radius: 100%;
     background-color: var(--white);

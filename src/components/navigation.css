@@ -213,7 +213,7 @@ a:hover {
         display: none;
     }
     .right-nav {
-        padding-left: 180px;
+        padding-left: 80px;
     }
     .avatar {
         width: 30px;
@@ -225,7 +225,7 @@ a:hover {
         position: absolute;
         top: 90px;
         left: 10px;
-        width: 480px;
+        width: 96%;
         height: 350px;
         box-shadow: none;
     }
