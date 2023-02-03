@@ -37,6 +37,7 @@
     border-radius: 10px;
 }
 .add-btn:hover {
+    cursor: pointer;
     background-color: hsl(26, 100%, 55%, 0.7);
     box-shadow: 5px 30px 20px -3px hsl(25, 100%, 94%);
 }

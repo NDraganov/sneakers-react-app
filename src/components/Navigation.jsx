@@ -54,10 +54,10 @@ function Navigation() {
         </ul>
         <div className="right-nav">
           <div className="cart-container">
-            <img className="cart" src={basket} alt="cart" onClick={handleCart}/>
+            <img className="cart" src={basket} title='Cart' alt="cart" onClick={handleCart}/>
             <p className={data > 0 && `count-cart`}>{data}</p>
           </div>
-            <img className="avatar" src={avatar} alt="avatar" onClick={handleCart}/>
+            <img className="avatar" src={avatar} title='Avatar' alt="avatar" onClick={handleCart}/>
         </div>
         </nav>
       </header>

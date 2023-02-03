@@ -1,5 +1,14 @@
 .footer {
     margin-top: 150px;
+    padding-bottom: 20px;
     text-align: center;
     color: hsl(219, 9%, 45%);
+}
+.footer a {
+    font-weight: 700;
+    color: hsl(220, 13%, 13%);
+    padding-right: 10px;
+}
+.footer a:hover {
+    color: var(--orange);
 }
