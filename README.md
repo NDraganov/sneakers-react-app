@@ -3,9 +3,7 @@
 This Project presents my third and final project with my Front-end Web Development
 course with Learning People Global.
 This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6).
-The purpose of the solution is to present "Put all together" Front-end web development 
-project using JavaScript UI Library.
-The solution itself is an e-commerce website SNEAKERS.
+The purpose of the solution is to present my "Bringing it together" Front-end web development project using JavaScript UI Library. The solution itself is an e-commerce website SNEAKERS.
 
 ## Table of contents
 
