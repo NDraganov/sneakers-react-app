@@ -30,7 +30,9 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Open a lightbox gallery by clicking on the large product image
+  - for the time being lightbox gallery is open by clicking on the thumbnails
 - Switch the large product image by clicking on the small thumbnail images
+  - Working in progress
 - Add items to the cart
 - View the cart and remove items from it
 
@@ -42,16 +44,19 @@ Users should be able to:
 #### Checkout modal
 ![Checkout](./public/assets/screenshots/Checkout-modal.png "Checkout-modal")
 
-#### Lightbox
+#### Lightbox gallery
 ![Lightbox](./public/assets/screenshots/Lightbox.png "Lightbox")
 
 #### Mobile version
 ![Mobile](./public/assets/screenshots/Mobile.png "Mobile")
 
+#### Checkout modal mobile
+![Checkout-mobile](./public/assets/screenshots/Checkout-mobile.png "Checkout-mobile")
+
 #### Offcanvas menu
 ![Offcanvas](./public/assets/screenshots/Offcanvas.png "Offcanvas-menu")
 
-### Links
+### Links to a repository and live site
 
 - [GitHub](https://github.com/NDraganov/sneakers-react-app)
 - [Live site](https://ndraganov.github.io/sneakers-react-app/)
@@ -107,6 +112,9 @@ Users should be able to:
     used "require()" in source attribute or imported.
   - Solution: I imported the images into the components and where was possible I
     used "require()" in source.
+* Safari browser displayed offcanvas without black background when toggle button pressed
+  - Bug occurred with the first attempt. When pressed for a second time the background is displayed
+  - Solution: Reason and solution not found yet
 
 ## Deployment
 
@@ -137,5 +145,5 @@ Users should be able to:
 * I'd like to thank [Academind](https://www.youtube.com/watch?v=Dorf8i6lCuk) on YouTube.
   This tutorial really helped me understand the basics of React.
 * I'd like to thank [Dr. Angela Yu](https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/17038306#overview) course for helping me learn React basics in more details.
-* And last but not least my mentor, Alex Ford for being such an amazing mentor for all of my 
+* And last but not least my mentor [Alex Ford](https://www.linkedin.com/in/alex-ford-b6b2a9188/) for being such an amazing mentor for all of my 
   Learning people's projects. His support and guidness helped me learn best practices in coding. He always pushed me to improve my code and layout. Thank you, Alex!
