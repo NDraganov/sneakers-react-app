@@ -119,9 +119,11 @@ a:hover {
     margin-top: 50px;
 }
 .side-nav p {
-    cursor: pointer;
     font-size: 16px;
     font-weight: 700;
+}
+.side-nav p:hover {
+    cursor: pointer;
 }
 .hidden {
     display: none;
