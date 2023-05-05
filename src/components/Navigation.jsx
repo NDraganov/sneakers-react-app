@@ -54,19 +54,19 @@ function Navigation() {
           <nav>
             <ul>
               <li>
-                <p>Collections</p>
+                <p title="Collections">Collections</p>
               </li>
               <li>
-                <p>Men</p>
+                <p title="Men">Men</p>
               </li>
               <li>
-                <p>Women</p>{" "}
+                <p title="Woman">Women</p>{" "}
               </li>
               <li>
-                <p>About</p>
+                <p title="About">About</p>
               </li>
               <li>
-                <p>Contact</p>
+                <p title="Contact">Contact</p>
               </li>
             </ul>
           </nav>

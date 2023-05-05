@@ -52,66 +52,20 @@ header nav ul li p:hover {
   cursor: pointer;
   color: hsl(220, 13%, 13%);
 }
+header div .cart:hover {
+  cursor: pointer;
+}
 header div .avatar {
   width: 3rem;
+}
+header div .avatar:hover {
+  cursor: pointer;
+  border: 2px solid var(--orange);
+  border-radius: 50%;
 }
 hr {
   margin: 0 8rem;
 }
-/* ul li {
-  padding: 55px 20px 0px;
-  height: 120px;
-}
-a {
-  color: hsl(219, 9%, 45%);
-  text-decoration: none;
-}
-a:hover {
-  color: hsl(220, 13%, 13%);
-}
-.link:hover {
-  padding-bottom: 47px;
-  border-bottom: 5px solid var(--orange);
-}
-.right-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.cart-container {
-  display: contents;
-}
-.cart {
-  cursor: pointer;
-  margin-right: 35px;
-}
-.count-cart {
-  position: relative;
-  right: 45px;
-  z-index: 1;
-  background-color: var(--orange);
-  color: var(--white);
-  font-size: 12px;
-  font-weight: 700;
-  width: 23px;
-  height: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-}
-.avatar {
-  width: 50px;
-}
-.avatar:hover {
-  cursor: pointer;
-  border: 2px solid var(--orange);
-  border-radius: 100%;
-}
-.nav-line {
-  margin: 2px 100px 1px 100px;
-  border: 1px solid hsl(220, 14%, 75%, 0.6);
-} */
 
 /* Offcanvas */
 .side-nav {
