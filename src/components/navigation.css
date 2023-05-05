@@ -1,236 +1,277 @@
 :root {
-    --orange: hsl(26, 100%, 55%);
-    --white: hsl(0, 0%, 100%);
+  --orange: hsl(26, 100%, 55%);
+  --white: hsl(0, 0%, 100%);
 }
 
 /* Main navigation */
+
 .navigation {
-    position: sticky;
-    top: 0px;
-    background-color: var(--white);
-    z-index: 99;
+  z-index: 99;
 }
-nav {
-    display: flex;
-    align-items: center;
-    height: 120px;
-    padding-left: 100px;
-    padding-right: 100px;
+header {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+  margin: 0 8rem;
 }
-.toggle {
-    display: none;
-    cursor: pointer;
-    padding-top: 3px;
+header div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
-.menu-links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    height: 120px;
-    padding-right: 450px;
+header .toggle {
+  display: none;
+  cursor: pointer;
+  padding-top: 3px;
 }
-ul li {
-    padding: 55px 20px 0px;
-    height: 120px;
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 0;
+  list-style: none;
+}
+header nav ul li {
+  height: 6rem;
+}
+header nav ul li:hover {
+  border-bottom: 4px solid var(--orange);
+}
+header nav ul li p {
+  color: hsl(219, 9%, 45%);
+  margin: 2.2rem 0 0 0;
+}
+header nav ul li p:hover {
+  cursor: pointer;
+  color: hsl(220, 13%, 13%);
+}
+header div .avatar {
+  width: 3rem;
+}
+hr {
+  margin: 0 8rem;
+}
+/* ul li {
+  padding: 55px 20px 0px;
+  height: 120px;
 }
 a {
-    color: hsl(219, 9%, 45%);
-    text-decoration: none;
+  color: hsl(219, 9%, 45%);
+  text-decoration: none;
 }
 a:hover {
-    color: hsl(220, 13%, 13%);
+  color: hsl(220, 13%, 13%);
 }
 .link:hover {
-    padding-bottom: 47px;
-    border-bottom: 5px solid var(--orange);
+  padding-bottom: 47px;
+  border-bottom: 5px solid var(--orange);
 }
 .right-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cart-container {
-    display: contents;
+  display: contents;
 }
 .cart {
-    cursor: pointer;
-    margin-right: 35px;
+  cursor: pointer;
+  margin-right: 35px;
 }
 .count-cart {
-    position: relative;
-    right: 45px;
-    z-index: 1;
-    background-color: var(--orange);
-    color: var(--white);
-    font-size: 12px;
-    font-weight: 700;
-    width: 23px;
-    height: 17px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
+  position: relative;
+  right: 45px;
+  z-index: 1;
+  background-color: var(--orange);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 700;
+  width: 23px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
 }
 .avatar {
-    width: 50px; 
+  width: 50px;
 }
 .avatar:hover {
-    cursor: pointer;
-    border: 2px solid var(--orange);
-    border-radius: 100%;
+  cursor: pointer;
+  border: 2px solid var(--orange);
+  border-radius: 100%;
 }
 .nav-line {
-    margin: 2px 100px 1px 100px;
-    border: 1px solid hsl(220, 14%, 75%, 0.6);
-}
+  margin: 2px 100px 1px 100px;
+  border: 1px solid hsl(220, 14%, 75%, 0.6);
+} */
 
 /* Offcanvas */
 .side-nav {
-    background-color: var(--white);
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 65vw;
-    padding-top: 100px !important;
-    z-index: 99;
-    padding: 30px 30px;
+  background-color: var(--white);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 65vw;
+  padding-top: 100px !important;
+  z-index: 99;
+  padding: 30px 30px;
 }
 .offcanvas-background {
-    background-color: hsl(0, 0%, 0%, 75%);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    padding: 0;
-    max-width: 100vw;
-    max-height: 100vh;
-    z-index: 9;
+  background-color: hsl(0, 0%, 0%, 75%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  max-height: 100vh;
+  z-index: 9;
 }
 .close-btn {
-    background: none;
-    border: none;
-    color: hsl(220, 13%, 13%);
+  background: none;
+  border: none;
+  color: hsl(220, 13%, 13%);
 }
 .side-nav p:first-of-type {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 .side-nav p {
-    font-size: 16px;
-    font-weight: 700;
+  font-size: 16px;
+  font-weight: 700;
 }
 .side-nav p:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 .hidden {
-    display: none;
+  display: none;
 }
 
 /* Checkout modal */
 .modul {
-    background-color: var(--white);
-    position: absolute;
-    top: 100px;
-    right: 90px;
-    width: 400px;
-    height: 290px;
-    z-index: 9;
-    border-radius: 10px;
-    box-shadow: 5px 20px 30px -3px hsl(220, 14%, 75%);
+  background-color: var(--white);
+  position: absolute;
+  top: 100px;
+  right: 90px;
+  width: 400px;
+  height: 290px;
+  z-index: 9;
+  border-radius: 10px;
+  box-shadow: 5px 20px 30px -3px hsl(220, 14%, 75%);
 }
 .modul h5 {
-    color: hsl(220, 13%, 13%);
-    font-weight: 700;
-    padding: 20px 20px;
-    margin-top: 10px;
+  color: hsl(220, 13%, 13%);
+  font-weight: 700;
+  padding: 20px 20px;
+  margin-top: 10px;
 }
 .modul hr {
-    position: absolute;
-    width: 100%;
-    right: 0px;
-    margin: 0px;
+  position: absolute;
+  width: 100%;
+  right: 0px;
+  margin: 0px;
 }
 .empty-info {
-    text-align: center;
-    padding-top: 80px;
-    font-weight: 700;
-    color: hsl(219, 9%, 45%);
+  text-align: center;
+  padding-top: 80px;
+  font-weight: 700;
+  color: hsl(219, 9%, 45%);
 }
 .cart-info {
-    text-align: center;
-    margin-top: 50px;
+  text-align: center;
+  margin-top: 50px;
 }
 .content {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .thumbnail {
-    width: 20%;
-    border-radius: 10px;
+  width: 20%;
+  border-radius: 10px;
 }
 .content p {
-    margin-bottom: 4px;
-    color: hsl(219, 9%, 45%);
-    font-size: 18px;
+  margin-bottom: 4px;
+  color: hsl(219, 9%, 45%);
+  font-size: 18px;
 }
 .content span {
-    color: hsl(220, 13%, 13%);
-    font-weight: 700;
+  color: hsl(220, 13%, 13%);
+  font-weight: 700;
 }
 .bin {
-    background: none;
-    border: none;
+  background: none;
+  border: none;
 }
 .checkout-btn {
-    background-color: var(--orange);
-    color: var(--white);
-    font-weight: 700;
-    border: none;
-    border-radius: 5px;
-    width: 92%;
-    height: 50px;
-    margin: 30px auto 10px;
+  background-color: var(--orange);
+  color: var(--white);
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  width: 92%;
+  height: 50px;
+  margin: 30px auto 10px;
 }
 .checkout-btn:hover {
-    background-color: hsl(26, 100%, 55%, 0.7);
-    box-shadow: 5px 30px 20px -3px hsl(25, 100%, 94%);
+  background-color: hsl(26, 100%, 55%, 0.7);
+  box-shadow: 5px 30px 20px -3px hsl(25, 100%, 94%);
 }
 
-@media only screen and (max-width: 600px) {
-    nav {
-        height: 80px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    .toggle {
-        display: block;
-        padding-left: 25px;
-    }
-    .logo {
-        padding-left: 20px;
-    }
-    .menu-links {
-        display: none;
-    }
-    .right-nav {
-        padding-left: 70px;
-    }
-    .avatar {
-        width: 30px;
-    }
-    .nav-line {
-        display: none;
-    }
-    .modul {
-        position: absolute;
-        top: 90px;
-        left: 10px;
-        width: 96%;
-        height: 350px;
-        box-shadow: none;
-    }
+@media only screen and (max-width: 450px) {
+  header {
+    height: 5rem;
+    margin: 0 1.5rem;
+  }
+  header div .toggle {
+    display: block;
+  }
+  header div nav {
+    display: none;
+  }
+  header div .avatar {
+    width: 2rem;
+  }
+  /* nav {
+    height: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .toggle {
+    display: block;
+    padding-left: 25px;
+  }
+  .logo {
+    padding-left: 20px;
+  }
+  .menu-links {
+    display: none;
+  }
+  .right-nav {
+    padding-left: 70px;
+  }
+  .avatar {
+    width: 30px;
+  }
+  .nav-line {
+    display: none;
+  }
+  .modul {
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    width: 96%;
+    height: 350px;
+    box-shadow: none;
+  } */
 }
