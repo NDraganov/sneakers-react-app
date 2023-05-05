@@ -113,51 +113,59 @@ hr {
 
 /* Checkout modal */
 .modul {
-  background-color: var(--white);
   position: absolute;
-  top: 100px;
-  right: 90px;
-  width: 400px;
-  height: 290px;
-  z-index: 9;
-  border-radius: 10px;
+  top: 5rem;
+  right: 5rem;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  background-color: var(--white);
+  width: 25rem;
+  height: 18rem;
+  border-radius: 8px;
   box-shadow: 5px 20px 30px -3px hsl(220, 14%, 75%);
+  padding: 0.5rem 0;
+  z-index: 5;
 }
 .modul h5 {
   color: hsl(220, 13%, 13%);
   font-weight: 700;
-  padding: 20px 20px;
-  margin-top: 10px;
+  margin: 1rem 2rem;
+  text-align: left !important;
 }
 .modul hr {
-  position: absolute;
+  position: relative;
   width: 100%;
-  right: 0px;
-  margin: 0px;
+  right: 8rem;
+  padding: 0 !important;
 }
-.empty-info {
+.modul .empty-cart {
   text-align: center;
-  padding-top: 80px;
+  margin-top: 5rem;
   font-weight: 700;
   color: hsl(219, 9%, 45%);
 }
 .cart-info {
-  text-align: center;
-  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 1.5rem;
 }
 .content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 0.5rem;
 }
-.thumbnail {
+.content .thumbnail {
   width: 20%;
   border-radius: 10px;
 }
 .content p {
-  margin-bottom: 4px;
   color: hsl(219, 9%, 45%);
-  font-size: 18px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 .content span {
   color: hsl(220, 13%, 13%);
@@ -173,9 +181,8 @@ hr {
   font-weight: 700;
   border: none;
   border-radius: 5px;
-  width: 92%;
-  height: 50px;
-  margin: 30px auto 10px;
+  width: 100%;
+  padding: 1rem;
 }
 .checkout-btn:hover {
   background-color: hsl(26, 100%, 55%, 0.7);

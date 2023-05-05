@@ -96,7 +96,7 @@ function Navigation() {
       {/* offcanvas */}
       <div className={`side-nav ${sideNav === false && `hidden`}`}>
         <button className="close-btn" onClick={handleCloseOffcanvas}>
-          <CloseIcon fontSize="medium" />
+          <CloseIcon fontSize="medium" title="Close" />
         </button>
         <div>
           <p title="Collections">Collections</p>
@@ -108,7 +108,7 @@ function Navigation() {
       </div>
       <div id="offcanvas-background"></div>
       {/* Checkout modal */}
-      <div className={`container modul ${cart === false && `hidden`}`}>
+      <div className={`modul ${cart === false && `hidden`}`}>
         <h5>Cart</h5>
         <hr />
         {data === null ? (
@@ -121,7 +121,7 @@ function Navigation() {
               <img
                 className="thumbnail"
                 src={require("../images/image-product-1-thumbnail.jpg")}
-                alt=""
+                alt="Shoes"
               />
               <div>
                 <p>Fall Limited Edition Sneakers</p>
@@ -130,11 +130,13 @@ function Navigation() {
                   <span>${125 * data}.00</span>
                 </p>
               </div>
-              <button className="bin" onClick={removeData}>
+              <button className="bin" title="Delete" onClick={removeData}>
                 <img src={bin} alt="bin" />
               </button>
             </div>
-            <button className="checkout-btn">Checkout</button>
+            <button className="checkout-btn" title="Checkout">
+              Checkout
+            </button>
           </div>
         )}
       </div>
