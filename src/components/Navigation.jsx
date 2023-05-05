@@ -98,11 +98,13 @@ function Navigation() {
         <button className="close-btn" onClick={handleCloseOffcanvas}>
           <CloseIcon fontSize="medium" />
         </button>
-        <p>Collections</p>
-        <p>Men</p>
-        <p>Women</p>
-        <p>About</p>
-        <p>Contact</p>
+        <div>
+          <p title="Collections">Collections</p>
+          <p title="Men">Men</p>
+          <p title="Woman">Women</p>
+          <p title="About">About</p>
+          <p title="Contact">Contact</p>
+        </div>
       </div>
       <div id="offcanvas-background"></div>
       {/* Checkout modal */}
