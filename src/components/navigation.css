@@ -203,36 +203,9 @@ hr {
   header div .avatar {
     width: 2rem;
   }
-  /* nav {
-    height: 80px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .toggle {
-    display: block;
-    padding-left: 25px;
-  }
-  .logo {
-    padding-left: 20px;
-  }
-  .menu-links {
-    display: none;
-  }
-  .right-nav {
-    padding-left: 70px;
-  }
-  .avatar {
-    width: 30px;
-  }
-  .nav-line {
-    display: none;
-  }
-  .modul {
-    position: absolute;
-    top: 90px;
-    left: 10px;
-    width: 96%;
-    height: 350px;
+  .modal {
+    top: 6rem;
+    left: 2%;
     box-shadow: none;
-  } */
+  }
 }
