@@ -1,80 +1,57 @@
 .description {
-    padding-top: 70px;
-    padding-left: 30px;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
 }
 .sneaker-company {
-    color: var(--orange);
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 3px;
+  color: var(--orange);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 3px;
 }
 .description-title {
-    color: hsl(220, 13%, 13%);
-    font-size: 45px;
-    font-weight: 700;
+  color: hsl(220, 13%, 13%);
+  font-size: 3rem;
+  font-weight: 700;
 }
 .sneakers-description {
-    padding-top: 25px;
-    padding-right: 50px;
-    color: hsl(219, 9%, 45%);
-    font-size: 16px;
-    line-height: 1.7;
+  margin-top: 2rem;
+  color: hsl(219, 9%, 45%);
+  font-size: 1rem;
+  line-height: 1.7;
 }
 .sale-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1rem;
 }
 .sale-price {
-    padding-top: 15px;
-    font-size: 30px;
-    font-weight: 700;
-    color: hsl(220, 13%, 13%);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: hsl(220, 13%, 13%);
+  margin: 0;
 }
 .transbox {
-    margin-right: 320px;
-    width: 60px;
-    height: 30px;
-    background: hsl(25, 100%, 94%);
-    border-radius: 7px;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 2rem;
+  background: hsl(25, 100%, 94%);
+  border-radius: 7px;
+  text-align: center;
 }
 .sale {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--orange);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--orange);
+  margin: 0;
 }
 .regular-price {
-    font-weight: 700;
-    color: hsl(220, 14%, 75%);
-    text-decoration: line-through;
+  font-weight: 700;
+  color: hsl(220, 14%, 75%);
+  text-decoration: line-through;
 }
-@media only screen and (max-width: 600px) {
-    .description {
-        padding-top: 20px;
-    }
-    .sneakers-description {
-        padding-right: 15px;
-    }
-    .description-title {
-        font-size: 40px;
-        padding-right: 10px;
-    }
-    .sneakers-description {
-        padding-top: 15px;
-        padding-right: 0px;
-    }
-    .price {
-        display: flex;
-        align-items: center;
-    }
-    .transbox {
-        margin-left: 20px;
-        margin-right: 97px;
-        padding: 0px 10px;
-    }
-    .regular-price {
-        margin-bottom: 0px;
-    }
+@media only screen and (max-width: 450px) {
 }

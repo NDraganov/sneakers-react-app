@@ -1,8 +1,6 @@
 .main {
-    padding: 100px 100px 0px 100px;
-}
-@media only screen and (max-width: 600px) {
-    .main {
-        padding: 0px;
-    }
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  margin: 6rem 13rem 0 13rem;
 }

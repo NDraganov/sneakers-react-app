@@ -28,18 +28,16 @@ function Main() {
   ];
   return (
     <div className="main">
-      <div className="row">
-        <div className="col-lg-6">
-          <Gallery
-            galleryImagesSmall={galleryImagesSmall}
-            galleryImagesBig={galleryImagesBig}
-          />
-          <MobileSlider galleryImagesBig={galleryImagesBig} />
-        </div>
-        <div className="col-lg-6">
-          <Description />
-          <AddCart />
-        </div>
+      <div>
+        <Gallery
+          galleryImagesSmall={galleryImagesSmall}
+          galleryImagesBig={galleryImagesBig}
+        />
+        <MobileSlider galleryImagesBig={galleryImagesBig} />
+      </div>
+      <div>
+        <Description />
+        <AddCart />
       </div>
     </div>
   );

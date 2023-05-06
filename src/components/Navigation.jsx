@@ -71,8 +71,8 @@ function Navigation() {
             </ul>
           </nav>
         </div>
-        <div className="right-nav">
-          <div className="cart-container">
+        <div>
+          <div>
             <img
               className="cart"
               src={basket}
