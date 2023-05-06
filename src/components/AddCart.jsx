@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./add-cart.css";
 import RemoveOutlinedIcon from "@mui/icons-material/RemoveOutlined";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import basket from "../images/icon-cart.svg";
+import "./add-cart.css";
 
 function AddCart() {
   const [count, setCount] = useState(0);
@@ -23,33 +23,29 @@ function AddCart() {
   }
 
   return (
-    <div className="add">
-      <div className="row">
-        <div className="col-lg-3 col-md-12 count-buttons">
-          <button
-            className="btn"
-            onClick={decrease}
-            disabled={count === 0 || (count < 0 && true)}
-          >
-            <RemoveOutlinedIcon />
-          </button>
-          <span className="number">{count}</span>
-          <button className="btn" onClick={increase}>
-            <AddOutlinedIcon />
-          </button>
-        </div>
-        <div className="col-lg-6 col-md-12 add-to-cart">
-          <button
-            className="add-btn"
-            onClick={addCount}
-            title="Add to cart"
-            disabled={count === 0 || (count < 0 && true)}
-          >
-            <img className="cart" src={basket} alt="basket" />
-            Add to cart
-          </button>
-        </div>
+    <div className="add-to-cart">
+      <div className="count-buttons">
+        <button
+          className="btn"
+          onClick={decrease}
+          disabled={count === 0 || (count < 0 && true)}
+        >
+          <RemoveOutlinedIcon />
+        </button>
+        <span className="count">{count}</span>
+        <button className="btn" onClick={increase}>
+          <AddOutlinedIcon />
+        </button>
       </div>
+      <button
+        className="add-btn"
+        onClick={addCount}
+        title="Add to cart"
+        disabled={count === 0 || (count < 0 && true)}
+      >
+        <img className="cart" src={basket} alt="basket" />
+        Add to cart
+      </button>
     </div>
   );
 }
