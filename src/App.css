@@ -11,6 +11,9 @@
   box-sizing: border-box;
 }
 .app {
+  display: grid;
+  grid-template-columns: auto;
+  place-items: center;
   width: 1440px !important;
   font-family: "Kumbh Sans";
 }
