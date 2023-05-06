@@ -15,7 +15,7 @@
   font-family: "Kumbh Sans";
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   .app {
     max-width: 100vw;
   }

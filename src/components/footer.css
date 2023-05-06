@@ -16,7 +16,7 @@
   color: var(--orange);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   .footer {
     flex-direction: column;
     gap: 0.5rem;
