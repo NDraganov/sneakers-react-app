@@ -59,4 +59,26 @@
   text-decoration: line-through;
 }
 @media only screen and (max-width: 375px) {
+  .description {
+    margin: 1.5rem;
+    padding: 0;
+  }
+  .sneaker-company {
+    font-size: 0.8rem;
+  }
+  .description-title {
+    font-size: 1.5rem;
+  }
+  .sneakers-description {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+  .price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .regular-price {
+    margin: 0;
+  }
 }

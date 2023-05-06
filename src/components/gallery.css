@@ -6,7 +6,7 @@
   gap: 2rem;
 }
 .large-image {
-  width: 70%;
+  width: 73%;
   border-radius: 7px;
 }
 .galleryWrap {
@@ -25,7 +25,7 @@
   opacity: 0.5;
   /* border: 2px solid var(--orange); */
 }
-/* .light-box {
+.light-box {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -115,9 +115,9 @@
   background-color: var(--white);
   opacity: 0.5;
   border: 2px solid var(--orange);
-} */
+}
 @media only screen and (max-width: 375px) {
-  .image-gallery {
+  .page-gallery {
     display: none;
   }
 }

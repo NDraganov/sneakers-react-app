@@ -4,7 +4,6 @@
 }
 
 /* Main navigation */
-
 .navigation {
   z-index: 99;
 }
@@ -54,6 +53,16 @@ header nav ul li p:hover {
 }
 header div .cart:hover {
   cursor: pointer;
+}
+header div .count-cart {
+  position: relative;
+  left: -1.8rem;
+  background-color: var(--orange);
+  color: var(--white);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0 0.5rem;
+  border-radius: 3rem;
 }
 header div .avatar {
   width: 3rem;
@@ -136,7 +145,7 @@ hr {
 .modal hr {
   position: relative;
   width: 100%;
-  right: 8rem;
+  left: -10rem;
   padding: 0 !important;
 }
 .modal .empty-cart {
@@ -203,9 +212,18 @@ hr {
   header div .avatar {
     width: 2rem;
   }
+  hr {
+    display: none;
+  }
   .modal {
     top: 6rem;
-    left: 2%;
+    left: 0.5rem;
+    width: 95%;
     box-shadow: none;
+  }
+  .modal hr {
+    display: block;
+    position: absolute;
+    top: 4rem;
   }
 }

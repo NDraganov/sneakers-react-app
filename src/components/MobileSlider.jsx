@@ -19,14 +19,18 @@ function MobileSlider({ galleryImagesBig }) {
 
   return (
     <div className="mobile-slider">
-      <button className="btn-prev" onClick={prevSlide}>
-        <ArrowBackIosIcon />
-      </button>
-      <button className="btn-next" onClick={nextSlide}>
-        <ArrowForwardIosIcon />
-      </button>
       <div className="mobile-image">
-        <img src={galleryImagesBig[slideNumber].img} alt="large-lightbox" />
+        <button className="btn-prev" onClick={prevSlide}>
+          <ArrowBackIosIcon />
+        </button>
+        <button className="btn-next" onClick={nextSlide}>
+          <ArrowForwardIosIcon />
+        </button>
+        <img
+          className="mobile-image"
+          src={galleryImagesBig[slideNumber].img}
+          alt="large-lightbox"
+        />
       </div>
     </div>
   );

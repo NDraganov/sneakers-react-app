@@ -15,3 +15,10 @@
 .footer a:hover {
   color: var(--orange);
 }
+
+@media screen and (max-width: 375px) {
+  .footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
