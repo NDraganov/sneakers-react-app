@@ -3,7 +3,8 @@
   align-items: left;
   justify-content: center;
   flex-direction: column;
-  margin: 4rem 0 1rem 0;
+  margin: 3rem 0 1rem 0;
+  padding-right: 3rem;
 }
 .sneaker-company {
   color: var(--orange);

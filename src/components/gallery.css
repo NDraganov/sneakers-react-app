@@ -17,7 +17,7 @@
 }
 .galleryWrap .thumb {
   cursor: pointer;
-  width: 6rem;
+  width: 5rem;
   border-radius: 7px;
 }
 .galleryWrap img:hover {
