@@ -1,18 +1,17 @@
-import React from 'react';
-import bootstrap from 'bootstrap';
-import './main.css';
-import Gallery from './Gallery';
-import MobileSlider from './MobileSlider';
-import Description from './Description';
-import AddCart from './AddCart';
-import thumb1 from '../images/image-product-1-thumbnail.jpg';
-import thumb2 from '../images/image-product-2-thumbnail.jpg';
-import thumb3 from '../images/image-product-3-thumbnail.jpg';
-import thumb4 from '../images/image-product-4-thumbnail.jpg';
-import product1 from '../images/image-product-1.jpg';
-import product2 from '../images/image-product-2.jpg';
-import product3 from '../images/image-product-3.jpg';
-import product4 from '../images/image-product-4.jpg';
+import React from "react";
+import "./main.css";
+import Gallery from "./Gallery";
+import MobileSlider from "./MobileSlider";
+import Description from "./Description";
+import AddCart from "./AddCart";
+import thumb1 from "../images/image-product-1-thumbnail.jpg";
+import thumb2 from "../images/image-product-2-thumbnail.jpg";
+import thumb3 from "../images/image-product-3-thumbnail.jpg";
+import thumb4 from "../images/image-product-4-thumbnail.jpg";
+import product1 from "../images/image-product-1.jpg";
+import product2 from "../images/image-product-2.jpg";
+import product3 from "../images/image-product-3.jpg";
+import product4 from "../images/image-product-4.jpg";
 
 function Main() {
   const galleryImagesSmall = [
@@ -28,14 +27,14 @@ function Main() {
     { img: product4 },
   ];
   return (
-    <div className="container main">
+    <div className="main">
       <div className="row">
         <div className="col-lg-6">
           <Gallery
             galleryImagesSmall={galleryImagesSmall}
             galleryImagesBig={galleryImagesBig}
           />
-          < MobileSlider galleryImagesBig={galleryImagesBig} />
+          <MobileSlider galleryImagesBig={galleryImagesBig} />
         </div>
         <div className="col-lg-6">
           <Description />

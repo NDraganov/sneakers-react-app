@@ -108,7 +108,7 @@ function Navigation() {
       </div>
       <div id="offcanvas-background"></div>
       {/* Checkout modal */}
-      <div className={`modul ${cart === false && `hidden`}`}>
+      <div className={`modal ${cart === false && "hidden"}`}>
         <h5>Cart</h5>
         <hr />
         {data === null ? (

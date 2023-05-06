@@ -1,12 +1,11 @@
-import bootstrap from 'bootstrap';
-import './App.css';
-import Navigation from './components/Navigation';
-import Main from './components/Main';
-import Footer from './components/Footer';
+import "./App.css";
+import Navigation from "./components/Navigation";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className='app'>
+    <div className="app">
       <Navigation />
       <Main />
       <Footer />
