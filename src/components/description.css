@@ -1,7 +1,9 @@
 .description {
   display: flex;
   align-items: left;
+  justify-content: center;
   flex-direction: column;
+  margin: 4rem 0 2rem 0;
 }
 .sneaker-company {
   color: var(--orange);
@@ -15,9 +17,10 @@
   font-weight: 700;
 }
 .sneakers-description {
-  margin-top: 2rem;
   color: hsl(219, 9%, 45%);
   font-size: 1rem;
+  margin-top: 2rem;
+  padding-right: 4rem;
   line-height: 1.7;
 }
 .sale-section {
@@ -27,9 +30,9 @@
   gap: 1rem;
 }
 .sale-price {
+  color: hsl(220, 13%, 13%);
   font-size: 1.8rem;
   font-weight: 700;
-  color: hsl(220, 13%, 13%);
   margin: 0;
 }
 .transbox {
@@ -43,14 +46,14 @@
   text-align: center;
 }
 .sale {
+  color: var(--orange);
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--orange);
   margin: 0;
 }
 .regular-price {
-  font-weight: 700;
   color: hsl(220, 14%, 75%);
+  font-weight: 700;
   text-decoration: line-through;
 }
 @media only screen and (max-width: 450px) {
