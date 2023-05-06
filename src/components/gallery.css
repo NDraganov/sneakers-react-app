@@ -32,7 +32,7 @@
   left: 0;
   right: 0;
   z-index: 999;
-  background-color: hsl(0, 0%, 0%, 75%);
+  background-color: var(--very-dark-blue);
   display: flex;
   align-items: center;
   justify-content: center;

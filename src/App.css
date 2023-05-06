@@ -10,9 +10,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --orange: hsl(26, 100%, 55%);
+  --pale-orange: hsl(25, 100%, 94%);
+  --very-dark-blue: hsl(220, 13%, 13%);
+  --dark-greyish-blue: hsl(219, 9%, 45%);
+  --greyish-blue: hsl(220, 14%, 75%);
+  --light-greyish-blue: hsl(223, 64%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --black-opacity: hsl(0, 0%, 0%, 75%);
+}
+
+/* App CSS */
 .app {
-  width: 1440px !important;
   font-family: "Kumbh Sans";
+  width: 1440px !important;
 }
 
 @media screen and (max-width: 450px) {

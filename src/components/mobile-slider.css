@@ -5,7 +5,7 @@
 .btn-next {
   position: absolute;
   cursor: pointer;
-  color: hsl(220, 13%, 13%);
+  color: var(--very-dark-blue);
   display: flex;
   align-items: center;
   justify-content: center;

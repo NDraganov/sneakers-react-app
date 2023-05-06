@@ -19,7 +19,7 @@
   padding-right: 3rem;
 }
 .sneakers-description {
-  color: hsl(219, 9%, 45%);
+  color: var(--dark-greyish-blue);
   font-size: 1rem;
   margin-top: 1rem;
   padding-right: 8rem;
@@ -32,7 +32,7 @@
   gap: 1rem;
 }
 .sale-price {
-  color: hsl(220, 13%, 13%);
+  color: var(--very-dark-blue);
   font-size: 1.8rem;
   font-weight: 700;
   margin: 0;
@@ -43,7 +43,7 @@
   justify-content: center;
   width: 4rem;
   height: 2rem;
-  background: hsl(25, 100%, 94%);
+  background: var(--pale-orange);
   border-radius: 7px;
   text-align: center;
 }
@@ -54,7 +54,7 @@
   margin: 0;
 }
 .regular-price {
-  color: hsl(220, 14%, 75%);
+  color: var(--greyish-blue);
   font-weight: 700;
   text-decoration: line-through;
 }
