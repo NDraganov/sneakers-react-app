@@ -2,5 +2,5 @@
   display: grid;
   grid-template-columns: auto auto;
   gap: 2rem;
-  margin: 6rem 13rem 0 13rem;
+  margin: 6rem 6rem 0;
 }

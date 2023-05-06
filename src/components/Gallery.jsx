@@ -26,7 +26,7 @@ function Gallery({ galleryImagesSmall, galleryImagesBig }) {
       : setSlideNumber(slideNumber + 1);
   }
   return (
-    <div className="image-gallery">
+    <div className="gallery">
       {openModal && (
         <div className="light-box">
           <button className="btnClose" onClick={handleCloseModal}>
@@ -57,22 +57,23 @@ function Gallery({ galleryImagesSmall, galleryImagesBig }) {
           </div>
         </div>
       )}
-
-      <img className="large-image" src={galleryImagesBig[0].img} alt="large" />
-      {/* Map method used from - https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/17039130#overview */}
-      <div className="galleryWrap">
-        {galleryImagesSmall &&
-          galleryImagesSmall.map((slide, index) => {
-            return (
-              <div
-                className="single"
-                key={index}
-                onClick={() => handleOpenModal(index)}
-              >
-                <img src={slide.img} alt="thumbnail" />
-              </div>
-            );
-          })}
+      <div className="page-gallery">
+        <img
+          className="large-image"
+          src={galleryImagesBig[0].img}
+          alt="large"
+        />
+        {/* Map method used from - https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/17039130#overview */}
+        <div className="galleryWrap">
+          {galleryImagesSmall &&
+            galleryImagesSmall.map((slide, index) => {
+              return (
+                <div key={index} onClick={() => handleOpenModal(index)}>
+                  <img className="thumb" src={slide.img} alt="thumbnail" />
+                </div>
+              );
+            })}
+        </div>
       </div>
     </div>
   );
