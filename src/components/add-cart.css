@@ -43,6 +43,9 @@
   box-shadow: 5px 30px 20px -3px hsl(25, 100%, 94%);
 }
 @media only screen and (max-width: 375px) {
+  .add-to-cart {
+    grid-template-columns: auto;
+  }
   .count-buttons {
     width: 95%;
   }
