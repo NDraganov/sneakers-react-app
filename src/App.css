@@ -11,5 +11,6 @@
   box-sizing: border-box;
 }
 .app {
-  font-family: Kumbh Sans;
+  width: 1440px !important;
+  font-family: "Kumbh Sans";
 }

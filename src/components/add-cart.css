@@ -42,7 +42,7 @@
   background-color: hsl(26, 100%, 55%, 0.7);
   box-shadow: 5px 30px 20px -3px hsl(25, 100%, 94%);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 375px) {
   .count-buttons {
     width: 95%;
   }
