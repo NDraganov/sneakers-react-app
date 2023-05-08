@@ -23,7 +23,16 @@
 
 /* App CSS */
 .app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Kumbh Sans";
+  min-height: 100vh;
+}
+.app-content {
+  border: 1px solid var(--greyish-blue);
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px var(--greyish-blue);
   width: 1440px !important;
 }
 
