@@ -21,10 +21,6 @@ function Navigation() {
     setData(get);
   }, [data]);
 
-  function handleCart() {
-    setCart(!cart);
-  }
-
   function removeData() {
     localStorage.removeItem("data");
     window.location.reload();
@@ -78,7 +74,9 @@ function Navigation() {
               src={basket}
               title="Cart"
               alt="cart"
-              onClick={handleCart}
+              onClick={() => {
+                setCart(!cart);
+              }}
             />
             <p className={data > 0 ? `count-cart` : undefined}>{data}</p>
           </div>
@@ -87,7 +85,7 @@ function Navigation() {
             src={avatar}
             title="Avatar"
             alt="avatar"
-            onClick={handleCart}
+            onClick={() => setCart(!cart)}
           />
         </div>
       </header>

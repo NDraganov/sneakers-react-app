@@ -1,18 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { increment, decrement } from "../redux/couterSlice";
 import RemoveOutlinedIcon from "@mui/icons-material/RemoveOutlined";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import basket from "../images/icon-cart.svg";
 import "./add-cart.css";
 
 function AddCart() {
-  const [count, setCount] = useState(0);
+  const count = useSelector((state) => state.counter.count);
+  const dispatch = useDispatch();
 
-  function increase() {
-    setCount(count + 1);
-  }
-  function decrease() {
-    setCount(count - 1);
-  }
   {
     /* Local storage info - https://blog.logrocket.com/using-localstorage-react-hooks/ */
   }
@@ -27,13 +24,13 @@ function AddCart() {
       <div className="count-buttons">
         <button
           className="btn"
-          onClick={decrease}
+          onClick={() => dispatch(decrement())}
           disabled={count === 0 || (count < 0 && true)}
         >
           <RemoveOutlinedIcon />
         </button>
         <span className="count">{count}</span>
-        <button className="btn" onClick={increase}>
+        <button className="btn" onClick={() => dispatch(increment())}>
           <AddOutlinedIcon />
         </button>
       </div>
