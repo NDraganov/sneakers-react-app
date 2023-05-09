@@ -28,29 +28,30 @@ function Gallery({ galleryImagesSmall, galleryImagesBig }) {
   return (
     <div className="gallery">
       {openModal && (
-        <div className="light-box">
+        <div className="lightbox">
           <button className="btnClose" onClick={handleCloseModal}>
             <CloseIcon fontSize="large" />
           </button>
-          <button className="btnPrev" onClick={prevSlide}>
-            <ArrowBackIosIcon />
-          </button>
-          <button className="btnNext" onClick={nextSlide}>
-            <ArrowForwardIosIcon />
-          </button>
-          <div className="large-image-lightbox">
-            <img src={galleryImagesBig[slideNumber].img} alt="large-lightbox" />
+          <div className="middle">
+            <button className="btnPrev" onClick={prevSlide}>
+              <ArrowBackIosIcon />
+            </button>
+            <div className="large-image-lightbox">
+              <img
+                src={galleryImagesBig[slideNumber].img}
+                alt="large-lightbox"
+              />
+            </div>
+            <button className="btnNext" onClick={nextSlide}>
+              <ArrowForwardIosIcon />
+            </button>
           </div>
-          <div className="container-gallery">
+          <div className="small-images-lightbox">
             {galleryImagesSmall &&
               galleryImagesSmall.map((slide, index) => {
                 return (
-                  <div
-                    className="single-image"
-                    key={index}
-                    onClick={() => handleOpenModal(index)}
-                  >
-                    <img src={slide.img} alt="thumbnail" />
+                  <div key={index} onClick={() => handleOpenModal(index)}>
+                    <img src={slide.img} alt="thumb-lighbox" />
                   </div>
                 );
               })}
