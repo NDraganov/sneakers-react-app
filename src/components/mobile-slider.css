@@ -28,7 +28,7 @@
 }
 .btn-next {
   top: 10rem;
-  left: 19rem;
+  left: 24rem;
 }
 
 @media only screen and (max-width: 450px) {
@@ -36,7 +36,7 @@
     display: block;
   }
   .mobile-image img {
-    width: 100%;
+    width: 100% !important;
     height: 21rem;
     margin: 0 !important;
   }

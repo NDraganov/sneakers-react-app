@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement } from "../redux/couterSlice";
 import RemoveOutlinedIcon from "@mui/icons-material/RemoveOutlined";
