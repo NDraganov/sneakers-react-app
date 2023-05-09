@@ -25,6 +25,7 @@
 .btn-prev {
   top: 10rem;
   left: 1rem;
+  padding-left: 0.5rem;
 }
 .btn-next {
   top: 10rem;
