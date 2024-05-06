@@ -10,6 +10,7 @@ function Footer() {
           href="https://www.frontendmentor.io?ref=challenge"
           title="Frontend Mentor"
           target="_blank"
+          rel="noreferrer"
         >
           Frontend Mentor
         </a>
@@ -20,6 +21,7 @@ function Footer() {
           href="https://github.com/NDraganov"
           title="Nedyalko Draganov"
           target="_blank"
+          rel="noreferrer"
         >
           Nedyalko Draganov
         </a>
