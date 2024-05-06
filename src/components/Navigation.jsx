@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getItems } from "../redux/cartSlice";
+import { getItems, toggleCart } from "../redux/cartSlice";
 import "./navigation.css";
 import toggle from "../images/icon-menu.svg";
 import logo from "../images/logo.svg";
@@ -10,10 +10,9 @@ import bin from "../images/icon-delete.svg";
 import CloseIcon from "@mui/icons-material/Close";
 
 function Navigation() {
-  const { cartItems } = useSelector((state) => state.cart);
+  const { cart, cartItems } = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
-  const [cart, setCart] = useState(false);
   const [sideNav, setSideNav] = useState(false);
   const offcanvasBackground = document.getElementById("offcanvas-background");
 
@@ -74,9 +73,7 @@ function Navigation() {
               src={basket}
               title="Cart"
               alt="cart"
-              onClick={() => {
-                setCart(!cart);
-              }}
+              onClick={() => dispatch(toggleCart())}
             />
             <p className={cartItems !== null ? `count-cart` : undefined}>
               {cartItems}
@@ -87,7 +84,7 @@ function Navigation() {
             src={avatar}
             title="Avatar"
             alt="avatar"
-            onClick={() => setCart(!cart)}
+            onClick={() => dispatch(toggleCart())}
           />
         </div>
       </header>
