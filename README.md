@@ -82,9 +82,8 @@ Users should be able to:
 
 ```js
 useEffect(() => {
-  const get = JSON.parse(localStorage.getItem("data")) || null;
-  setData(get);
-}, [data]);
+  dispatch(getItems());
+}, [dispatch]);
 ```
 
 - Map method - used for displaying gallery wrap
@@ -109,11 +108,12 @@ useEffect(() => {
 - LocalStorage - used to get and set item for cart functionality
 
 ```js
-function addCount() {
-  const get = JSON.parse(localStorage.getItem("data")) || null;
-  localStorage.setItem("data", JSON.stringify(get + count));
-  window.location.reload();
-}
+ addItems(state) {
+      localStorage.setItem("items", JSON.stringify(state.items));
+      const itemsStorage = JSON.parse(localStorage.getItem("items"));
+      state.cartItems = itemsStorage;
+      state.items = 0;
+    },
 ```
 
 ### Errors and Bugs
