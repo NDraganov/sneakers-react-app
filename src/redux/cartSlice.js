@@ -29,10 +29,20 @@ export const cartSlice = createSlice({
       const itemsStorage = JSON.parse(localStorage.getItem("items"));
       state.cartItems = itemsStorage;
     },
+    removeItems(state) {
+      const deleteItemsStorage = localStorage.removeItem("items");
+      state.cartItems = deleteItemsStorage;
+    },
   },
 });
 
-export const { toggleCart, increment, decrement, addItems, getItems } =
-  cartSlice.actions;
+export const {
+  toggleCart,
+  increment,
+  decrement,
+  addItems,
+  getItems,
+  removeItems,
+} = cartSlice.actions;
 
 export default cartSlice.reducer;

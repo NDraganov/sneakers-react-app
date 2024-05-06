@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getItems, toggleCart } from "../redux/cartSlice";
+import { getItems, removeItems, toggleCart } from "../redux/cartSlice";
 import { closeMenu, openMenu } from "../redux/sideNavSlice";
 import "./navigation.css";
 import toggle from "../images/icon-menu.svg";
@@ -17,12 +17,7 @@ function Navigation() {
 
   useEffect(() => {
     dispatch(getItems());
-  }, [dispatch]);
-
-  function removeData() {
-    localStorage.removeItem();
-    window.location.reload();
-  }
+  }, [dispatch, cartItems]);
 
   return (
     <div className="navigation">
@@ -118,7 +113,11 @@ function Navigation() {
                   <span>${125 * cartItems}.00</span>
                 </p>
               </div>
-              <button className="bin" title="Delete" onClick={removeData}>
+              <button
+                className="bin"
+                title="Delete"
+                onClick={() => dispatch(removeItems())}
+              >
                 <img src={bin} alt="bin" />
               </button>
             </div>
