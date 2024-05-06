@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getItems, toggleCart } from "../redux/cartSlice";
+import { closeMenu, openMenu } from "../redux/sideNavSlice";
 import "./navigation.css";
 import toggle from "../images/icon-menu.svg";
 import logo from "../images/logo.svg";
@@ -11,10 +12,8 @@ import CloseIcon from "@mui/icons-material/Close";
 
 function Navigation() {
   const { cart, cartItems } = useSelector((state) => state.cart);
+  const { sideNav } = useSelector((state) => state.sideNav);
   const dispatch = useDispatch();
-
-  const [sideNav, setSideNav] = useState(false);
-  const offcanvasBackground = document.getElementById("offcanvas-background");
 
   useEffect(() => {
     dispatch(getItems());
@@ -23,15 +22,6 @@ function Navigation() {
   function removeData() {
     localStorage.removeItem();
     window.location.reload();
-  }
-
-  function handleOpenOffcanvas() {
-    setSideNav(true);
-    offcanvasBackground.classList.add("offcanvas-background");
-  }
-  function handleCloseOffcanvas() {
-    setSideNav(false);
-    offcanvasBackground.classList.remove("offcanvas-background");
   }
 
   return (
@@ -43,7 +33,7 @@ function Navigation() {
             className="toggle"
             src={toggle}
             alt="toggle"
-            onClick={handleOpenOffcanvas}
+            onClick={() => dispatch(openMenu())}
           />
           <img className="logo" src={logo} alt="logo" />
           <nav>
@@ -92,7 +82,7 @@ function Navigation() {
 
       {/* offcanvas */}
       <div className={`side-nav ${sideNav === false && `hidden`}`}>
-        <button className="close-btn" onClick={handleCloseOffcanvas}>
+        <button className="close-btn" onClick={() => dispatch(closeMenu())}>
           <CloseIcon fontSize="medium" title="Close" />
         </button>
         <div>
