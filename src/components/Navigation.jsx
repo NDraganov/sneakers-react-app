@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getItems } from "../redux/cartSlice";
 import "./navigation.css";
 import toggle from "../images/icon-menu.svg";
 import logo from "../images/logo.svg";
@@ -8,21 +10,19 @@ import bin from "../images/icon-delete.svg";
 import CloseIcon from "@mui/icons-material/Close";
 
 function Navigation() {
-  const [data, setData] = useState(null);
+  const { cartItems } = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+
   const [cart, setCart] = useState(false);
   const [sideNav, setSideNav] = useState(false);
   const offcanvasBackground = document.getElementById("offcanvas-background");
 
-  {
-    /* useEffect info taken from - https://www.youtube.com/watch?v=Dorf8i6lCuk */
-  }
   useEffect(() => {
-    const get = JSON.parse(localStorage.getItem("data")) || null;
-    setData(get);
-  }, [data]);
+    dispatch(getItems());
+  }, [dispatch]);
 
   function removeData() {
-    localStorage.removeItem("data");
+    localStorage.removeItem();
     window.location.reload();
   }
 
@@ -78,7 +78,9 @@ function Navigation() {
                 setCart(!cart);
               }}
             />
-            <p className={data > 0 ? `count-cart` : undefined}>{data}</p>
+            <p className={cartItems !== null ? `count-cart` : undefined}>
+              {cartItems}
+            </p>
           </div>
           <img
             className="avatar"
@@ -105,11 +107,12 @@ function Navigation() {
         </div>
       </div>
       <div id="offcanvas-background"></div>
+
       {/* Checkout modal */}
       <div className={`modal ${cart === false && "hidden"}`}>
         <h5>Cart</h5>
         <hr />
-        {data === null ? (
+        {cartItems === null ? (
           <div className="empty-cart">
             <p className="empty-info">Your cart is empty</p>
           </div>
@@ -124,8 +127,8 @@ function Navigation() {
               <div>
                 <p>Fall Limited Edition Sneakers</p>
                 <p>
-                  $125.00 x {data} &nbsp;
-                  <span>${125 * data}.00</span>
+                  $125.00 x {cartItems} &nbsp;
+                  <span>${125 * cartItems}.00</span>
                 </p>
               </div>
               <button className="bin" title="Delete" onClick={removeData}>
